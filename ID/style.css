@@ -45,7 +45,7 @@
 }
 .four{
     top: 100%;
-    transform: translateY(-100%);
+    transform: translateY(-170%);
 }
 .five{
     transform: translateY(-100%);
@@ -88,7 +88,7 @@ li i{
 .btn{
     display: block;
     border: none;
-    padding: 5px 20px;
+    padding: 5px 25px;
     margin:5px 0 ;
     font-size: 3rem;
     border-radius: 50%;
