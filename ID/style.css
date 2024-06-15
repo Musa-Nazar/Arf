@@ -1,0 +1,106 @@
+@font-face{
+    font-family:"Raleway";
+    src: url('Raleway/static/Raleway-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+.container{
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 2px;
+    transition: all 0.4s linear;
+    position: relative;
+    position: fixed;
+    left: 80%;
+}
+.ball{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: teal;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+    bbottom: 0;
+    position: relative;
+    transform: translateY(100vh-80px);
+    position: absolute;
+    /*transition: all 0.4s linear;*/
+}
+.one{
+    top: 0;
+}
+.two{
+    transform: translateY(100%);
+    margin:2px 0;
+}
+.three{
+    transform: translateY(200%);
+    margin:4px 0;
+}
+.four{
+    top: 100%;
+    transform: translateY(-100%);
+}
+.five{
+    transform: translateY(-100%);
+}
+.string{
+    width: 5px;
+    height: 100vh;
+    border-radius: 50%;
+    background-color: teal;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.left-panel{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10px;
+    background: #009000;
+    color: #fff;
+    z-index: 10;
+    overflow: scroll;
+}
+.left-panel h1{
+    padding: 2rem 0;
+    color: #fff;
+    font-size: 2rem;
+}
+.left-panel ul li{
+    font-size: 1.5rem;
+    padding: 1rem 3px;
+}
+.left-panel ul .rem ul{
+    display: none;
+}
+li i{
+    float: right;
+    padding-top: 3px;
+    transform: rotate(90deg);
+}
+.btn{
+    display: block;
+    border: none;
+    padding: 5px 20px;
+    margin:5px 0 ;
+    font-size: 3rem;
+    border-radius: 50%;
+    background-color: #009000;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    text-align: center;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+.btn:active{
+    transform: scale(0.8);
+}
+.rem i{
+    transform: rotate(0deg);
+}
